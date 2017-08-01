@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>git上传文件--步骤</title>
+	<style type="text/css">
+		p{
+			margin:0 auto;
+			text-align: left;
+			font-size: 20px;
+			color:purple;
+			width:600px;
+		}
+	</style>
+</head>
+<body>
+	<p>
+		1.打开终端，通过cd desktop转到desktop<br/>
+		2.用mkdir指令，新建文件夹"git"<br/>
+		3.通过cd git进入文件夹<br/>
+		4.用git init指令初始化本地仓库<br/>
+		5.用touch指令 新建文件 index.html<br/>
+		6.用git add .上传所有文件<br/>
+		7.用git commit -m "注释内容" 提交文件(这时主线生成)<br/>
+		8.用git branch piao1(这是支线名称)<br/>
+		9.用git checkout piao1 切换到新创建的支线 (可通过git <br/>branch来查看当前所在主线或支线)<br/>
+		10.可在支线中新建文件或修改文件，然后提交。这时并不会使主线内容改变。当完成支线任务时，通过git checkout master切回主线<br/>
+		11.用git merge piao1来融合主线和支线的内容<br/>
+		12.进入github New repository创建新的仓库，然后在新仓库复制链接，在终端中粘贴链接，与本地仓库创建通道。<br/>
+		13.之后，可以通过git push origin <br/>master在本地仓库中向github的仓库传文件。(可通过cd 选择文件夹来定义传递文件的区间)<br/>
+	</p>
+</body>
+</html>
