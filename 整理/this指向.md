@@ -18,6 +18,7 @@
 		alert(this.x); 
 	} 
 	test(); // 结果0
+	
 ### 情况二：作为对象方法调用
 
 > #### 函数还可以作为某个对象的方法调用，这时this就指这个上级对象 
@@ -29,6 +30,7 @@
     b.x = 1; 
     b.m = test; 
     b.m(); // 结果1 
+    
 ### 情况三 作为构造函数调用 
 > #### 所谓构造函数，就是通过这个函数生成一个新对象（object）。这时，this就指这个新对象。 
 > ##### 请看下面这段代码：
@@ -44,6 +46,7 @@
 	} 
 	var b = new test(); 
 	alert(x); // 结果2 	
+	
 ### 情况四 作为构造函数调用 
 > #### apply()是函数对象的一个方法，它的作用是改变函数的调用对象，它的第一个参数就表示改变后的调用这个函数的对象。因此，this指的就是这第一个参数。call()方法与apply()类似，在这里不举例了；
 > ##### 请看下面这段代码：
@@ -77,9 +80,12 @@
     　　}
     };
     obj.showNumber();
+    
 ##### 这是一道常见面试题。由于showNumber是属于obj对象下的函数，所以this.number = 3，修改的是obj对象下的number属性。第一个console.log（this.number），在函数自执行里面，按理说结果应该是3，因为它是在obj对象下的，但是特殊就特殊在它是函数自执行，在函数自执行里，this指向window，所以结果是1。第二个console.log（this.number）,就是刚刚修改过的number属性，结果为3。
 ##### ** 注：在定时器里的this也是默认指向window**
 
-#### [this指向问题](http://www.cnblogs.com/lisha-better/p/5684844.html) [__proto__和prototype的关系](https://github.com/dreamapplehappy/hacking-with-javascript/blob/master/points/understand-prototype-__proto__.md)这两个链接都不错。下次看完继续更新...
+#### [this指向问题](http://www.cnblogs.com/lisha-better/p/5684844.html)  
+[__proto__和prototype的关系](https://github.com/dreamapplehappy/hacking-with-javascript/blob/master/points/understand-prototype-__proto__.md)  
+这两个链接都不错。下次看完继续更新...
     
 			
