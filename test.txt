@@ -1,0 +1,40 @@
+
+H5-pomingjie:ofo PIAO3$ npm init
+
+Press ^C at any time to quit.
+package name: (ofo) ofo
+version: (1.0.0) 
+description: 
+entry point: (ofo.js) 
+test command: 
+git repository: 
+keywords: 
+author: 
+license: (ISC) 
+
+
+Is this ok? (yes) 
+H5-pomingjie:ofo PIAO3$ npm i gulp
+
++ gulp@3.9.1
+
+H5-pomingjie:ofo PIAO3$ npm i gulp-clean-css
+
++ gulp-clean-css@3.8.0
+
+
+
++ gulp-rename@1.2.2
+
+H5-pomingjie:ofo PIAO3$ npm i gulp-uglify
+
++ gulp-uglify@3.0.0
+
+H5-pomingjie:ofo PIAO3$ 
+
+
+git remote add origin https://github.com/GentlemanANDLadies/piao3_ofo.git
+
+
+
+
